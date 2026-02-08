@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELISHA GODWIN YAKUBU | TSU Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <button id="theme-toggle" class="theme-btn">🌓
+        <h1>ELISHA GODWIN YAKUBU</h1>
+        <p><strong>Matric Number:</strong> TSU/FSC/CS/25/2001</p>
+        <p>Taraba State University - Computer Science</p>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="pic1.jpg" alt="Slide 1">
+            <div class="text">Innovative Creativity</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="pic2.jpg" alt="Slide 2">
+            <div class="text">Computer Science Excellence</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="pic3.jpg" alt="Slide 3">
+            <div class="text">TSU Learning Environment</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="pic4.jpg" alt="Slide 4">
+            <div class="text">The Future of Technology</div>
+        </div>
+    </div>
+<section class="post-section">
+  <h2>Community Posts</h2>
+
+  <textarea id="postInput" placeholder="Write something..."></textarea>
+
+  <!-- Media Upload -->
+  <input type="file" id="mediaInput" accept="image/*,video/*">
+
+  <button onclick="createPost()">Post</button>
+
+  <div id="postsContainer"></div>
+</section>
+</section>
+    <main>
+        <section id="about">
+            <h2>About This Website</h2>
+            <p>I am a computer science student at <strong>Taraba State University</strong> who has the vision of building a website that will help learners through <strong>Innovative creativity in computer science</strong>.</p>
+        </section>
+
+        <section id="payment">
+            <h2>Support & Payments</h2>
+            <div class="account-card">
+                <p><strong>Ecobank:</strong> 3170168195</p>
+                <button onclick="copyToClipboard('3170168195')">Copy Account</button>
+            </div>
+            <div class="account-card">
+                <p><strong>Opay:</strong> 9019103569</p>
+                <button onclick="copyToClipboard('9019103569')">Copy Account</button>
+            </div>
+            <div class="qr-placeholder">
+                <p>Scan to Pay</p>
+                <i class="fas fa-qrcode fa-4x"></i>
+            </div>
+        </section>
+
+        <section id="socials">
+            <h2>Connect With Me</h2>
+            <div class="social-links">
+                <a href="https://wa.me/2349067303462" class="wa-btn"><i class="fab fa-whatsapp"></i> WhatsApp 1</a>
+                <a href="https://wa.me/2349019103569" class="wa-btn"><i class="fab fa-whatsapp"></i> WhatsApp 2</a>
+                <a href="https://facebook.com/ElishaGodwin" class="fb-btn">Facebook</a>
+                <a href="https://twitter.com/godwin18801" class="tw-btn">Twitter/X</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Email Me Directly</h2>
+            <form action="https://formspree.io/f/your_id" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send to elishagodwinyakubu@gmail.com</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="fullImage">
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Elisha Godwin Yakubu | Taraba state University</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
